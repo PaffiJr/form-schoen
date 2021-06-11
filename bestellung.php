@@ -4,16 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impressum</title>
-    
+    <title>Bestellung</title>
+
     <!--------------------------------------------
         Bootstrap CSS - Quelle: https://bit.ly/3uLcnCt
     ----------------------------------------->
     <link rel="stylesheet" href="assets/bootstrap.min.css">
 
+    <!--------------------------------------------
+        CSS Prüfungsteil 1 
+    ----------------------------------------->
     <link rel="stylesheet" href="style.css">
+
+    <!--------------------------------------------
+        CSS Prüfungsteil 2
+    ----------------------------------------->
+    <link rel="stylesheet" href="style-w3.css">
 </head>
 <body>
+
+    <!--------------------------------------------
+        Skript - Formular Felder
+    ----------------------------------------->
+    <?php 
+
+        /*  Variablen erstellen und Werte aus Post von accessoires.php ziehen */
+        $hidden = '';
+        $success = '';
+        $vorname = $_POST["vorname"];
+        $nachname = $_POST["nachname"];
+        $strasse = $_POST["strasse"];
+        $nummer = $_POST["hausnummer"];
+        $plz = $_POST["plz"];
+        $ort = $_POST["ort"];
+        $email = $_POST["mail"];
+        $telefon = $_POST["telefon"];
+        $date = $_POST["date"];
+        $sum = $_POST["sum"];
+
+        /*  IF-Statement Wenn der Submit Button gedrückt wurde   */
+        if(isset($_POST["submit"])) {
+            /*  CSV Datei öffnen   */
+            $file_open = fopen("contact_data.csv", "w");
+            /*  Array für die Zeilen erstellen   */
+            $form_data = array(
+                /*  1. Zeile - Spalten Beschreibung   */
+                array('Vorname', 'Nachname', 'Straße', 'Hausnummer', 'PLZ', 'Ort', 'E-Mail', 'Telefon', 'Lieferdatum', 'Preis'), 
+                /*  2. Zeile - Werte der Spalten   */
+                array($vorname, $nachname, $strasse, $nummer, $plz, $ort, $email, $telefon, $date, $sum)
+            );
+            /*  Für jede Array-Zeile eine CSV Zeile in die Datei setzen   */
+            foreach ($form_data as $fields) {
+                fputcsv($file_open, $fields);
+            }
+            /*  Success Botschaft zeigen   */
+            $success = "<h2>Vielen Dank für die Bestellung!</h2><br><p>Sie finden die Bestelldaten in der Datei: contact_date.csv</p>";
+            /*  Formular verstecken   */
+            $hidden = "hidden";
+        }
+    ?>
     <header>
         <nav class="navbar navbar-expand-lg navbar--dark">
             <div class="container">
@@ -65,62 +114,38 @@
     <main>
         <div class="container--index">
             <section>
-                <div class="impressum">
-                    <div class="container">
-                        <h3>Impressum</h3>
-                        <p>Schuhmanufaktur Formschön GmbH </p>
-                        <p>Geschäftsführung: Maria Gracia und Paolo Zuretti </p>
-                        <br>
-                        <p>Alte Bahnhofstraße 5a </p>
-                        <p>53173 Bonn-Bad Godesberg </p>
-                        <br>
-                        <p>Tel: 0228-123450, </p>
-                        <p>Fax: 0228-123459  </p>
-                        <br>
-                        <p>info@schuhmanufaktur-formschön.de </p>
-                        <p>www.schuhmanufaktur-formschön.de  </p>
-                        <br>
-                        <p>Amtsgericht Bonn, Handelsregister Nr. XXX000XXX </p>
-                        <p>Finanzamt Bonn-Außenstadt, USt.ID: DE10111011</p>
+                <div class="container">
+                    <div class="section-headline <?php echo $hidden?>">
+                        <h2>Bestellformular</h2>
+                        <hr class="line--headline-leistungen">
+                        <h4>Schuhmanufaktur Formschön</h4>
                     </div>
-                </div>
-            </section>
-            <section>
-                <div class="impressum">
-                    <div class="container">
-                        <h3>Datenschutz</h3>
-                        <p>Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:</p>
-                        <br>
-                        <p>Maria Gracia und Paolo Zuretti</p>
-                        <br>
-                        <p>Ihre Betroffenenrechte</p>
-                        <p>Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende Rechte ausüben:</p>
-                        <br>
-                        <p>Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO),</p>
-                        <p>Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO),</p>
-                        <p>Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO),</p>
-                        <p>Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen (Art. 18 DSGVO),</p>
-                        <p>Widerspruch gegen die Verarbeitung Ihrer Daten bei uns (Art. 21 DSGVO) und
-                            Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben (Art. 20 DSGVO).</p>
-                        <p>Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.</p>
-                        <br>
-                        <p>Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die zuständige Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige Behörde.</p>
-                        <br>
-                        <p>Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter: </p>
-                        <p class="word-break">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html.</p>
-                        <br>
-                        <p>Information über Ihr Widerspruchsrecht nach Art. 21 DSGVO</p>
-                        <p>Einzelfallbezogenes Widerspruchsrecht</p>
-                        <p>Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung Sie betreffender personenbezogener Daten, die aufgrund Art. 6 Abs. 1 lit. f DSGVO (Datenverarbeitung auf der Grundlage einer Interessenabwägung) erfolgt, Widerspruch einzulegen; dies gilt auch für ein auf diese Bestimmung gestütztes Profiling im Sinne von Art. 4 Nr. 4 DSGVO.</p>
-                        <br>
-                        <p>Legen Sie Widerspruch ein, werden wir Ihre personenbezogenen Daten nicht mehr verarbeiten, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.</p>
-                        <br>
-                        <p>Empfänger eines Widerspruchs</p>
-                        <p>Änderung unserer Datenschutzbestimmungen</p>
-                        <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
-                        <br>
-                        <p>Fragen an den Datenschutzbeauftragten</p>
-                        <p>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person in unserer Organisation:</p>
+                    <div class="form_wrapper form_wrapper--bestellung <?php echo $hidden?>">
+                        <form method="post">
+                            <div class="form-couple">
+                                <input type="text" name="vorname" required="required" placeholder="Vorname*">
+                                <input type="text" name="nachname" required="required" placeholder="Nachname*">
+                            </div>
+                            <div class="form-couple form-couple--address">
+                                <input type="text" name="strasse" required="required" placeholder="Straße*">
+                                <input type="text" name="hausnummer" required="required" placeholder="Hausnummer*">
+                            </div>
+                            <div class="form-couple form-couple--ort">
+                                <input type="text" name="plz" required="required" placeholder="Postleitzahl*">
+                                <input type="text" name="ort" required="required" placeholder="Ort*">
+                            </div>
+                            <input type="email" name="mail" required="required" placeholder="E-Mail*">
+                            <input type="tel" name="telefon" placeholder="Telefon" pattern="^[0-9/\+\-\s]*$">
+                            <input type="date" name="date" min="<?php echo date("Y-m-d"); ?>" placeholder="Gewünschtes Lieferdatum">
+                            <p id="total_price"></p>
+                            <div class="form-send">
+                                <input type="submit" name="submit" value="Kostenpflichtig bestellen" class="header--jubiläum__btn btn--w3">
+                                <input type="hidden" id="sum" name="sum" value="0">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="succes_wrapper">
+                        <?php echo $success?>
                     </div>
                 </div>
             </section>
@@ -157,7 +182,7 @@
                         </div>
                         <div class="footer-contact__link">
                             <img class="footer-contact__icon" src="img/icon-globe.svg" alt="Globe Icon">
-                            <a href="accessoires.php">W3-Modul</a>
+                            <a href="https://www.schuhmanufaktur-formschön.de" target="_blank">www.schuhmanufaktur-formschön.de</a>
                         </div>
                     </div>
                 </div>
@@ -174,14 +199,29 @@
     </footer>
 
     <!--------------------------------------------
-            JQuery JS - Quelle: https://bit.ly/3fELRq6
-        ----------------------------------------->
+        JQuery JS - Quelle: https://bit.ly/3fELRq6
+    ----------------------------------------->
     <script type = "text/javascript" src="js/jquery-3.6.0.min.js"></script>
 
     <!--------------------------------------------
             Bootstrap JS - Quelle: https://bit.ly/3uLcnCt
         ----------------------------------------->
     <script type = "text/javascript" src="js/bootstrap.bundle.min.js"></script>
-    
+
+    <script>
+
+        /*  Zeigt die aus der accessoires.php Datei gepostete summierte Preis Variable an und setze sie im
+            Hidden Input als Value  */
+        function total_price(){
+            var price = document.getElementById("total_price");
+            var sum_input = document.getElementById("sum");
+            var sumJS = "Der Gesamtpreis beträgt: <span class=\"vollkorn-semibold\"> <?php echo $sum; ?></span>";
+            var sumJSinput = <?php echo $sum; ?>;
+            price.innerHTML = sumJS;
+            sum_input.value = sumJSinput;
+        }
+        total_price();
+
+    </script>
 </body>
 </html>
