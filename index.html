@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schuhmanufaktur Formschön</title>
+
+    <!--------------------------------------------
+            Bootstrap CSS - Quelle: https://bit.ly/3uLcnCt
+        ----------------------------------------->
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar__logo" src="img/logo-dark.svg" alt="Logo">
+                    <img class="navbar__logo--light" src="img/logo-light.svg" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarLeistungen" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Leistungen
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.6" d="M8.825 0.142853L5 3.67476L1.175 0.142853L0 1.23019L5 5.85714L10 1.23019L8.825 0.142853Z" fill="white" fill-opacity="0.8"/>
+                            </svg>   
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarLeistungen">
+                            <a class="dropdown-item" href="index.html">Leistungen</a>
+                            <a class="dropdown-item" href="#pflegetipps">Pflegetipps</a>
+                            <a class="dropdown-item" href="#maßschuh">Maßschuh</a>
+                        </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarJubiläum" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Jubiläum
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.6" d="M8.825 0.142853L5 3.67476L1.175 0.142853L0 1.23019L5 5.85714L10 1.23019L8.825 0.142853Z" fill="white" fill-opacity="0.8"/>
+                                </svg>   
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarJubiläum">
+                                <a class="dropdown-item" href="jubiläum.html">Jubiläum</a>
+                                <a class="dropdown-item" href="jubiläum.html#chronologie">Chronologie</a>
+                                <a class="dropdown-item" href="jubiläum.html#stimmen">Stimmen</a>
+                            </div>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontakt">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="impressum.html">Impressum</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container--index">
+            <div class="header header--index">
+                <div class="header__text">
+                    <h1>Schuhmanufaktur <br><span class="semibold">Formschön</span></h1>
+                    <hr class="line--index-header">
+                    <h3>Eleganz von Kopf bis Fuß</h3>
+                    <div class="standort">
+                        <svg class="standort__icon" width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 0C2.23571 0 0 2.191 0 4.9C0 8.575 5 14 5 14C5 14 10 8.575 10 4.9C10 2.191 7.76429 0 5 0ZM1.42857 4.9C1.42857 2.968 3.02857 1.4 5 1.4C6.97143 1.4 8.57143 2.968 8.57143 4.9C8.57143 6.916 6.51429 9.933 5 11.816C3.51429 9.947 1.42857 6.895 1.42857 4.9Z" fill="#525252" fill-opacity="0.8"/>
+                            <path d="M5.00002 6.65C5.98625 6.65 6.78574 5.8665 6.78574 4.9C6.78574 3.9335 5.98625 3.15 5.00002 3.15C4.0138 3.15 3.21431 3.9335 3.21431 4.9C3.21431 5.8665 4.0138 6.65 5.00002 6.65Z" fill="#525252" fill-opacity="0.8"/>
+                        </svg>                        
+                        <p class="standort__text">Bad Godesberg</p>
+                    </div>
+                </div>
+                <div class="header__img"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container--index">
+            <section>
+                <div class="leistungen" id="leistungen">
+                    <div class="section-headline">
+                        <h2>Wir lieben Leder  </h2>
+                        <hr class="line--headline-leistungen">
+                        <h4>Schumanufaktur Formschön</h4>
+                    </div>
+                    <div class="pencil-headline">
+                        <div class="pencil-headline__wrapper">
+                            <p class="pencil-headline__text">Das leisten wir für Sie</p>
+                        </div>
+                    </div>
+                    <div class="background-line">
+                        <div class="leistungen--text_img">
+                            <div class="leistungen__text">
+                                <div class="leistungen__headline">
+                                    <img class="leistungen__headline_icon" src="img/icon-tools.svg" alt="Tool Icon">                                  
+                                    <h3 class="semibold">Reparieren</h3>
+                                </div>
+                                <p>Kommen Sie mit hochwertigen Lederwaren zu uns, wenn etwas kaputt ist.</p>
+                                <h5 class="mt-32">Wie zum Beispiel</h5>
+                                <div class="leistungen__table">
+                                    <div class="leistungen__table-item">
+                                        <div class="leistungen__table-item__icon">
+                                            <img src="img/icon-check.svg" alt="Check">
+                                        </div>
+                                        <div class="leistungen__table-item__text">
+                                            <p>Ein eingerissener Riemen am Rucksack</p>
+                                        </div>
+                                    </div>
+                                    <div class="leistungen__table-item">
+                                        <div class="leistungen__table-item__icon">
+                                            <img src="img/icon-check.svg" alt="Check">
+                                        </div>
+                                        <div class="leistungen__table-item__text">
+                                            <p>Ein Reißverschluss an der Tasche der sich verhakt hat </p>
+                                        </div>
+                                    </div>
+                                    <div class="leistungen__table-item">
+                                        <div class="leistungen__table-item__icon">
+                                            <img src="img/icon-check.svg" alt="Check">
+                                        </div>
+                                        <div class="leistungen__table-item__text">
+                                            <p>Schief getretene Stiefelsohlen</p>
+                                        </div>
+                                    </div>
+                                    <div class="leistungen__table-item">
+                                        <div class="leistungen__table-item__icon">
+                                            <img src="img/icon-check.svg" alt="Check">
+                                        </div>
+                                        <div class="leistungen__table-item__text">
+                                            <p>Ein locker gewordener Schuhabsatz</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="leistungen__secundary-text mt-32">Der Erhalt von schönen, Ihnen lieb gewordenen Qualitätswaren ins uns ein Anliegen! Wegwerfen war gestern!</p>
+                            </div>
+                            <div class="leistungen__img">
+                                <img src="img/Bild_08.jpg" alt="Schuh">
+                            </div>
+                        </div>
+                        <div class="leistungen--img_text">
+                            <div class="leistungen__img">
+                                <img src="img/Bild_13.jpg" alt="Schuh">
+                            </div>
+                            <div class="leistungen__text">
+                                <div class="leistungen__headline">
+                                    <img class="leistungen__headline_icon" src="img/icon-stars.svg" alt="Star Icon">                                  
+                                    <h3 class="semibold">Verbessern</h3>
+                                </div>
+                                <p>Scheuen Sie sich nicht, auch mit guten, industriell gefertigten Qualitätsschuhen zu uns zu kommen, wenn Sie spezielle Anpassungswünsche haben. </p>
+                                <h5 class="mt-32">Wie zum Beispiel</h5>
+                                <div class="leistungen__table">
+                                    <div class="leistungen__table-item">
+                                        <div class="leistungen__table-item__icon">
+                                            <img src="img/icon-check.svg" alt="Check">
+                                        </div>
+                                        <div class="leistungen__table-item__text">
+                                            <p>Schuhe weiten</p>
+                                        </div>
+                                    </div>
+                                    <div class="leistungen__table-item">
+                                        <div class="leistungen__table-item__icon">
+                                            <img src="img/icon-check.svg" alt="Check">
+                                        </div>
+                                        <div class="leistungen__table-item__text">
+                                            <p>Stiefelschäfte kürzen</p>
+                                        </div>
+                                    </div>
+                                    <div class="leistungen__table-item">
+                                        <div class="leistungen__table-item__icon">
+                                            <img src="img/icon-check.svg" alt="Check">
+                                        </div>
+                                        <div class="leistungen__table-item__text">
+                                            <p>Spezialsohlen anbringen</p>
+                                        </div>
+                                    </div>
+                                    <div class="leistungen__table-item">
+                                        <div class="leistungen__table-item__icon">
+                                            <img src="img/icon-check.svg" alt="Check">
+                                        </div>
+                                        <div class="leistungen__table-item__text">
+                                            <p>Beinlängen-Differenz ausgleichen</p>
+                                        </div>
+                                    </div>
+                                    <div class="leistungen__table-item">
+                                        <div class="leistungen__table-item__icon">
+                                            <img src="img/icon-check.svg" alt="Check">
+                                        </div>
+                                        <div class="leistungen__table-item__text">
+                                            <p>Absätze erhöhen</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="leistungen__secundary-text mt-32">Es ist uns wichtig, dass Ihre Füße eine passgenaue Bekleidung haben. Schmerzen sind vermeidbar.</p>
+                            </div>
+                        </div>
+                        <div class="leistungen--text_img">
+                            <div class="leistungen__text">
+                                <div class="leistungen__headline">
+                                    <img class="leistungen__headline_icon" src="img/icon-schuh.svg" alt="Tool Icon">                                  
+                                    <h3 class="semibold">Kreieren</h3>
+                                </div>
+                                <p>Sprechen Sie uns an, wenn Sie exklusive Schuhe tragen wollen, Modelle nach Ihren modischen Vorstellungen und der Eigenart Ihrer Füße. </p>
+                                <p class="leistungen__secundary-text mt-32">Neben der Fertigung individueller Maßschuhe gibt es auch kostengünstigere Varianten, wie etwa die Maßkonfektion mit vielfältigen Wahlmöglichkeiten. 
+                                    <br><br>
+                                    Zögern Sie nicht!
+                                </p>
+                            </div>
+                            <div class="leistungen__img">
+                                <img src="img/Bild_04.jpg" alt="Schuh">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="pflegetipps" id="pflegetipps">
+                    <div class="container">
+                        <div class="section-headline section-headline--light">
+                            <h2>Ihren Füßen zuliebe </h2>
+                            <hr class="line--headline-leistungen">
+                            <h4>Schumanufaktur Formschön</h4>
+                        </div>
+                        <div class="pencil-headline pencil-headline--light">
+                            <div class="pencil-headline__wrapper">
+                                <p class="pencil-headline__text">Unsere Pflegetipps</p>
+                            </div>
+                        </div>
+                        <div class="background-line--light">
+                            <div class="pflegetipps__table">
+                                <div class="pflegetipps__item">
+                                    <p class="pflegetipps__number">01</p>
+                                    <p class="pflegetipps__text">Verwenden Sie Streckleisten aus Holz und spannen Sie Ihre Schuhe ein, solange sie vom Tragen noch warm und geschmeidig sind. </p>
+                                </div>
+                                <div class="pflegetipps__item">
+                                    <p class="pflegetipps__number">02</p>
+                                    <p class="pflegetipps__text">Verwenden Sie nicht jeden Tag dasselbe Paar. Gute Schuhe wollen ausruhen dürfen. </p>
+                                </div>
+                                <div class="pflegetipps__item">
+                                    <p class="pflegetipps__number">03</p>
+                                    <p class="pflegetipps__text">Bewahren Sie Schuhe in einem Schrank mit Lüftungsschlitzen auf. </p>
+                                </div>
+                                <div class="pflegetipps__item">
+                                    <p class="pflegetipps__number">04</p>
+                                    <p class="pflegetipps__text">Pflegen Sie das Oberleder ab und zu mit einem flüssigen Reiniger. Achten Sie bei Lack- und Rauleder auf spezielle Pflegemittel. </p>
+                                </div>
+                                <div class="pflegetipps__item">
+                                    <p class="pflegetipps__number">05</p>
+                                    <p class="pflegetipps__text">Stopfen Sie nass gewordene Schuhe mit Zeitungspapier aus, entfernen Sie weiße Ränder mit warmem Wasser.</p>
+                                </div>
+                                <div class="pflegetipps__item">
+                                    <p class="pflegetipps__number">06</p>
+                                    <p class="pflegetipps__text">Verwenden Sie nach der Fleckenentfernung passende Pflegemittel. Wir beraten Sie gerne. </p>
+                                </div>
+                                <div class="pflegetipps__item">
+                                    <p class="pflegetipps__number">07</p>
+                                    <p class="pflegetipps__text">Entfernen Sie vor dem Pflegen die Schnürsenkel. </p>
+                                </div>
+                                <div class="pflegetipps__item">
+                                    <p class="pflegetipps__number">08</p>
+                                    <p class="pflegetipps__text">Polieren Sie ausgiebig. Fragen Sie uns nach den richtigen Bürsten. </p>
+                                </div>
+                                <div class="pflegetipps__item">
+                                    <p class="pflegetipps__number">09</p>
+                                    <p class="pflegetipps__text">Stecken Sie Ihre Schuhe auf Reisen in luftdurchlässige Beutel. </p>
+                                </div>
+                                <div class="pflegetipps__item">
+                                    <p class="pflegetipps__number">10</p>
+                                    <p class="pflegetipps__text">Verwenden Sie immer einen Schuhlöffel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="maßschuh" id="maßschuh">
+                    <div class="container">
+                        <div class="section-headline">
+                            <h2>Immer einen Schritt voraus</h2>
+                            <hr class="line--headline-leistungen">
+                            <h4>Manufaktur Formschön</h4>
+                        </div>
+                        <div class="maßschuh__content">
+                            <div class="maßschuh__left">
+                                <p>Der zeitliche Aufwand bei der Herstellung Ihrer individuellen Maßschuhe kann beträchtlich variieren, je nach Modell, Machart und Sonderwünschen. </p>
+                                <p>Wir rechnen mit <span class="bold">mindestens 30 Arbeitsstunden</span>. Der gesamte Arbeitsprozess zieht sich in der Regel <span class="bold">über acht Wochen</span> hin. </p>
+                                <p>Rechnen Sie pro Paar mit einem Preis <span class="bold">zwischen 2000,– und 3000,– Euro</span>. Sobald wir einen fußgerechten Leisten für Sie gefertigt haben, können wir ihn für alle Nachfolgemodelle nutzen – und Sie sparen bares Geld.</p>
+                                <p class="maßschuh__info">Damenschuhe sind in der Regel aufwendiger und daher etwas teurer als Modelle für den Herrn.</p>
+                            </div>
+                            <div class="maßschuh__right">
+                                <div class="maßschuh__schritte">
+                                    <h5>Dreimal sind Sie in dieser Zeit gefragt</h5>
+                                    <div class="leistungen__table">
+                                        <div class="leistungen__table-item">
+                                            <div class="leistungen__table-item__icon">
+                                                <p>1</p>
+                                            </div>
+                                            <div class="leistungen__table-item__text">
+                                                <p>Beim Vermessen und Wählen des Modells</p>
+                                            </div>
+                                        </div>
+                                        <div class="leistungen__table-item">
+                                            <div class="leistungen__table-item__icon">
+                                                <p>2</p>
+                                            </div>
+                                            <div class="leistungen__table-item__text">
+                                                <p>Bei einer ersten Anprobe</p>
+                                            </div>
+                                        </div>
+                                        <div class="leistungen__table-item">
+                                            <div class="leistungen__table-item__icon">
+                                                <p>3</p>
+                                            </div>
+                                            <div class="leistungen__table-item__text">
+                                                <p>Schließlich am Tag der Fertigstellung</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="maßschuh__weg">
+                                    <h5>Der Weg zu Ihrem Maßschuh</h5>
+                                    <div class="maßschuh__list">
+                                        <div class="maßschuh__list-item">
+                                            <p class="maßschuh__list-number">01</p>
+                                            <p class="maßschuh__list-text">Die Fußmessung</p>
+                                        </div>
+                                        <div class="maßschuh__list-item">
+                                            <p class="maßschuh__list-number">02</p>
+                                            <p class="maßschuh__list-text">Die Auswahl von Farbe und Form</p>
+                                        </div>
+                                        <div class="maßschuh__list-item">
+                                            <p class="maßschuh__list-number">03</p>
+                                            <p class="maßschuh__list-text">Die Entscheidung für’s Leder</p>
+                                        </div>
+                                        <div class="maßschuh__list-item">
+                                            <p class="maßschuh__list-number">04</p>
+                                            <p class="maßschuh__list-text">Die Herstellung des Leistens</p>
+                                        </div>
+                                        <div class="maßschuh__list-item">
+                                            <p class="maßschuh__list-number">05</p>
+                                            <p class="maßschuh__list-text">Die Fertigung des Schuhs Teil I</p>
+                                        </div>
+                                        <div class="maßschuh__list-item">
+                                            <p class="maßschuh__list-number">06</p>
+                                            <p class="maßschuh__list-text">Die Anprobe</p>
+                                        </div>
+                                        <div class="maßschuh__list-item">
+                                            <p class="maßschuh__list-number">07</p>
+                                            <p class="maßschuh__list-text">Die Fertigung des Schuhs Teil II</p>
+                                        </div>
+                                        <div class="maßschuh__list-item">
+                                            <p class="maßschuh__list-number">08</p>
+                                            <p class="maßschuh__list-text">Letzte Anpassungen und Feinarbeiten</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    </main>
+    <footer>
+        <div class="container--index">
+            <div class="container">
+                <div class="footer--top" id="kontakt">
+                    <div class="footer__text">
+                        <h3>Öffnungszeiten</h3>
+                        <p>Montag–Freitag 9–17 Uhr</p>
+                        <p>Samstag	10–15 Uhr und </p>
+                        <p>nach Vereinbarung</p>
+                    </div>
+                    <div class="footer__text">
+                        <h3>Kontakt</h3>
+                        <p>Schuhmanufaktur Formschön GmbH</p>
+                        <p>Alte Bahnhofstraße 5a </p>
+                        <p>53173 Bonn-Bad Godesberg </p>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="footer-contact__link">
+                            <img class="footer-contact__icon" src="img/icon-phone.svg" alt="Mail Icon">
+                            <a href="tel:0228-123450">Tel: 0228-123450</a>
+                        </div>
+                        <div class="footer-contact__link">
+                            <img class="footer-contact__icon" src="img/icon-fax.svg" alt="Globe Icon">
+                            <a href="tel:0228-123450">Fax: 0228-123459</a>
+                        </div>
+                        <div class="footer-contact__link">
+                            <img class="footer-contact__icon" src="img/icon-mail.svg" alt="Mail Icon">
+                            <a href="mailto:info@schuhmanufaktur-formschön.de">info@schuhmanufaktur-formschön.de</a>
+                        </div>
+                        <div class="footer-contact__link">
+                            <img class="footer-contact__icon" src="img/icon-globe.svg" alt="Globe Icon">
+                            <a href="https://www.schuhmanufaktur-formschön.de" target="_blank">www.schuhmanufaktur-formschön.de</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer--bottom">
+                    <div class="footer-contact__social">
+                        <a href="https://www.youtube.com/" target="_blank"><img src="img/youtube.svg" alt="Youtube"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.svg" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.svg" alt="Facebook"></a>
+                        <a href="https://www.snapchat.com/" target="_blank"><img src="img/snapchat.svg" alt="snapchat"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--------------------------------------------
+            JQuery JS - Quelle: https://bit.ly/3fELRq6
+        ----------------------------------------->
+    <script type = "text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+    <!--------------------------------------------
+            Bootstrap JS - Quelle: https://bit.ly/3uLcnCt
+        ----------------------------------------->
+    <script type = "text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    
+</body>

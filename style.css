@@ -1,0 +1,1532 @@
+/*----------------------------------------
+  Fonts
+----------------------------------------*/
+@font-face {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/Vollkorn-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 500;
+    src: url('assets/Vollkorn-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 600;
+    src: url('assets/Vollkorn-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('assets/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: url('assets/Lato-Light.ttf') format('truetype');
+}
+
+/*----------------------------------------
+  Variables
+----------------------------------------*/
+:root {
+
+    --color-dark: #2B2B2B;
+    --color-light: #525252;
+    --color-bg-light: #F5F1ED;
+    --color-bg-dark: #1A1A1A;
+    --color-primary: #DCA35B;
+    --color-white: #FFFFFF;
+}
+
+/*----------------------------------------
+  Body
+----------------------------------------*/
+
+body {
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+body p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-dark);
+    margin-bottom: 0px;
+}
+
+body a {
+    text-decoration: none !important;
+}
+
+h1 {
+    margin-bottom: 0px;
+    font-family: 'Vollkorn', serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 115%;
+    letter-spacing: -0.02em;
+    color: var(--color-dark);
+}
+
+h2 {
+    margin-bottom: 0px;
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: var(--color-dark);
+}
+
+h3 {
+    margin-bottom: 0px;
+    font-family: Vollkorn;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: var(--color-dark);
+}
+
+h4 {
+    margin-bottom: 0px;
+    font-family: Vollkorn;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: var(--color-light);
+}
+
+h5 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-light);
+}
+
+/*----------------------------------------
+  Helper Klassen
+----------------------------------------*/
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.bg-light {
+    background-color: var(--color-bg-light) !important;
+}
+
+/*----------------------------------------
+  Container
+----------------------------------------*/
+
+.container {
+    max-width: 960px;
+    padding: 0px;
+}
+
+.container--index {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*----------------------------------------
+  Navbar
+----------------------------------------*/
+
+.navbar {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    padding: 16px 39px;
+    font-family: 'Vollkorn', serif;
+    font-weight: 500;
+    color: var(--color-white);
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}
+
+.navbar--dark {
+    position: relative;
+    border-bottom: 1px solid var(--color-primary);
+}
+
+.navbar--dark a {
+    color: var(--color-dark) !important;
+}
+
+.navbar--dark path {
+    fill: var(--color-dark);
+    opacity: 0.6;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-brand img {
+    height: 48px;
+}
+
+.navbar-brand .navbar__logo {
+    display: block;
+}
+
+.navbar-brand .navbar__logo--light {
+    display: none;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.nav-link {
+    padding: 0px 16px !important;
+}
+
+.nav-link {
+    color: var(--color-white) !important;
+}
+
+.nav-item:last-child .nav-link {
+    padding-right: 0px !important;
+}
+
+.nav-item.show svg {
+    transform: rotate(180deg);
+    transition-duration: 0.2s;
+    transition-property: transform;
+}
+
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+/*----------------------------------------
+  Header
+----------------------------------------*/
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: var(--color-bg-light);
+    padding: 0px 39px;
+}
+
+.header__img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-image: url('img/Bild_30-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+}
+
+.header__text {
+    max-width: 960px;
+    margin: auto;
+    padding-top: 167px;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+hr {
+    background-color: var(--color-primary);
+    height: 1px;
+    margin: 12px 0px;
+}
+
+hr.line--index-header {
+    width: 255px;
+}
+
+.standort {
+    margin-top: 64px;
+    display: flex;
+    max-width: 168px;
+    align-items: center;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgba(43, 43, 43, 0.1);
+    border-radius: 2px;
+}
+
+.standort__icon {
+    margin-right: 16px;
+}
+
+.standort__text {
+    font-weight: 600;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-light);
+}
+
+/*----------------------------------------
+  Leistungen
+----------------------------------------*/
+
+.background-line {
+    position: relative;
+
+}
+
+.background-line {
+    background-image: url("img/background-line.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px 0px 120px 0px;
+}
+
+.background-line--light {
+    background-color: var(--color-bg-dark);
+    background-image: url("img/background-line-light.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 48px 0px 72px 0px;
+}
+
+.leistungen {
+    padding-top: 120px;
+}
+
+.section-headline {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+hr.line--headline-leistungen {
+    width: 255px;
+}
+
+.pencil-headline {
+    margin-top: 64px;
+}
+
+.pencil-headline__wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 156px;
+    height: 48px;
+    background-image: url('img/pencil-shape.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.pencil-headline__text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    color: var(--color-dark);
+}
+
+.leistungen--text_img {
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+}
+
+.leistungen__text {
+    width: calc(50% - 108px);
+    margin-right: 48px;
+}
+
+.leistungen--img_text .leistungen__text {
+    margin-left: 48px;
+    margin-right: 0px;
+}
+
+.leistungen__headline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.leistungen__headline_icon {
+    margin-right: 16px;
+}
+
+.leistungen--img_text .leistungen__img {
+    background: linear-gradient(90deg, var(--color-bg-light) 50%, transparent 50%);
+}
+
+.leistungen__img {
+    height: 549px;
+    width: calc(50% + 60px);
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, transparent 50%, var(--color-bg-light) 50%);
+}
+
+.leistungen__img img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.leistungen__table {
+    display: flex;
+    flex-direction: column;
+}
+
+.leistungen__table-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(43, 43, 43, 0.1);
+}
+
+.leistungen__table-item:last-child {
+    border-bottom: none;
+}
+
+.leistungen__table-item__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 13.5px;
+    max-width: 38px;
+}
+
+.leistungen__table-item__text {
+    padding: 8px 12px;
+    border-left: 1px solid rgba(43, 43, 43, 0.1);
+}
+
+.leistungen__table-item__text p {
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-dark);
+}
+
+.leistungen__secundary-text {
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-light);
+}
+
+.leistungen--img_text {
+    display: flex;
+    align-items: center;
+    margin: 120px 0px;
+    padding-right: 120px;
+}
+
+/*----------------------------------------
+  Pflegetipps
+----------------------------------------*/
+
+.pflegetipps {
+    padding-top: 72px;
+    background-color: var(--color-bg-dark);
+}
+
+.section-headline--light h2 {
+    color: var(--color-white);
+}
+
+.section-headline--light h4 {
+    color: var(--color-bg-light);
+    opacity: 0.8;
+}
+
+.pencil-headline--light .pencil-headline__wrapper {
+    background-image: url('img/pencil-shape-dark.svg');
+}
+
+.pencil-headline--light .pencil-headline__text {
+    color: var(--color-bg-light);
+}
+
+.pflegetipps__table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 48px;
+    max-width: 960px;
+    margin: auto;
+}
+
+.pflegetipps__item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.pflegetipps__number {
+    margin-right: 32px;
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    color: var(--color-primary);
+}
+
+.pflegetipps__text {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-white);
+}
+
+/*----------------------------------------
+  Maßschuh
+----------------------------------------*/
+
+.maßschuh {
+    padding-top: 72px;
+    padding-bottom: 96px;
+    background-color: var(--color-bg-light);
+}
+
+.maßschuh__content {
+    max-width: 960px;
+    margin: auto;
+    padding-top: 48px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.maßschuh__left {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 24px);
+    margin-right: 48px;
+}
+
+.maßschuh__left p {
+    margin-bottom: 24px;
+}
+
+.maßschuh__info {
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.maßschuh__right {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 24px);
+}
+
+.maßschuh__schritte {
+    padding: 20px;
+    margin-bottom: 2px;
+    background-color: var(--color-white);
+    border-radius: 2px;
+}
+
+.maßschuh__weg {
+    padding: 20px;
+    margin-bottom: 2px;
+    background-color: var(--color-white);
+    border-radius: 2px;
+}
+
+.maßschuh__schritte .leistungen__table-item__icon p {
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.maßschuh__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+    margin-top: 16px;
+}
+
+.maßschuh__list-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.maßschuh__list-number {
+    font-family: Vollkorn;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: var(--color-dark);
+}
+
+.maßschuh__list-text {
+    font-size: 12px;
+    line-height: 125%;
+    color: var(--color-light);
+    margin-top: 4px;
+}
+
+/*----------------------------------------
+  Footer
+----------------------------------------*/
+
+footer {
+    background-color: var(--color-bg-dark);
+}
+
+.footer--top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 64px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer--top h3 {
+    color: var(--color-white);
+    margin-bottom: 16px;
+    line-height: 100%;
+}
+
+.footer__links a {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--color-bg-light);
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+
+.footer__text {
+    margin-right: 16px;
+}
+
+.footer__text p {
+    color: var(--color-bg-light);
+    font-size: 16px;
+}
+
+.footer__text:first-child p:nth-child(3) {
+    margin-top: 8px;
+}
+
+.footer--bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 64px;
+    margin-top: 24px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-contact__link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.footer-contact__link a {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--color-bg-light);
+}
+
+.footer-contact__icon {
+    margin-right: 8px;
+}
+
+.footer-contact__social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 62px;
+}
+
+.footer-contact__social a {
+    margin-right: 8px;
+}
+
+/*----------------------------------------
+  Jubiläum-Header
+----------------------------------------*/
+
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+#JiSlider-header {
+    width: 100vw;
+    max-width: 1200px;
+    height: 600px;
+}
+
+.jislider__controller {
+    display: flex;
+    justify-content: space-between;
+    width: 44px !important;
+    padding: 0px;
+}
+
+.jislider__button {
+    width: 8px;
+    height: 8px;
+    padding: 0px;
+    margin: 0px;
+    background: none !important;
+    border: 1px solid var(--color-white) !important;
+}
+
+.jislider__on {
+    background: var(--color-white) !important;
+}
+
+.jislider__left-arrow,
+.jislider__right-arrow {
+    display: none;
+}
+
+.header--jubiläum {
+    background-color: none;
+    background-image: none;
+    padding: 0px;
+}
+
+.header--jubiläum__headline {
+    position: absolute;
+    top: 164px;
+    left: calc(50% - 320px);
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header--jubiläum__headline h1 {
+    color: var(--color-white);
+    text-align: center;
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.header--jubiläum__headline h3 {
+    color: var(--color-white);
+    text-align: center;
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.header--jubiläum__btn {
+    margin-top: 72px;
+    padding: 16px 24px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-white) !important;
+}
+
+.header--jubiläum__btn:hover,
+.header--jubiläum__btn:focus {
+    border: none;
+    background-color: var(--color-primary);
+    transition: 0.3s;
+    transition-property: background-color;
+    text-decoration: none;
+}
+
+/*----------------------------------------
+  Jubiläum-Einleitung
+----------------------------------------*/
+
+.jubiläum__einleitung {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    border: 1px solid #2B2B2B;
+    border-radius: 2px;
+    padding: 32px;
+    max-width: 640px;
+    margin: 72px calc(50% - 320px) 0px calc(50% - 320px);
+}
+
+.jubiläum__einleitung-logo {
+    position: absolute;
+    left: calc(50% - 320px - 28px);
+    top: -28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 11px;
+    width: 56px;
+    height: 56px;
+    background: var(--color-white);
+    border: 1px solid var(--color-primary);
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.jubiläum__einleitung-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/*----------------------------------------
+  Chronologie
+----------------------------------------*/
+
+.chronologie {
+    margin: 120px auto 0px auto;
+    max-width: 960px;
+    padding: 64px 39px;
+    background-color: var(--color-bg-light);
+}
+
+.chronologie__meilenstein-wrapper {
+    margin-top: 120px;
+    position: relative;
+}
+
+.chronologie__meilenstein {
+    padding: 0px 0px 0px 272px;
+    position: relative;
+    color: var(--color-light);
+    border-left: 2px solid var(--color-light);
+    display: flex;
+    justify-content: space-between;
+}
+
+.chronologie__seperator {
+    padding: 59px 0px;
+    border-left: 2px solid var(--color-light);
+}
+
+.chronologie__seperator hr {
+    height: 2px;
+    background-color: var(--color-bg-light);
+    visibility: hidden;
+}
+
+.chronologie__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 377px;
+}
+
+.chronologie__img {
+    max-width: 200px;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+}
+
+.chronologie__meilenstein:nth-child(1) .chronologie__img {
+    background-image: url('img/Bild_02-small.jpg');
+}
+
+.chronologie__meilenstein:nth-child(3) .chronologie__img {
+    background-image: url('img/Bild_06-small.jpg');
+}
+
+.chronologie__meilenstein:nth-child(5) .chronologie__img {
+    background-image: url('img/Bild_29-small.jpg');
+}
+
+.chronologie__meilenstein:nth-child(7) .chronologie__img {
+    background-image: url('img/Bild_26-small.jpg');
+}
+
+.chronologie__meilenstein:nth-child(9) .chronologie__img {
+    background-image: url('img/Messe-1.jpg');
+}
+
+.chronologie__meilenstein:nth-child(11) .chronologie__img {
+    background-image: url('img/Bild_33-small.jpg');
+}
+
+.chronologie__meilenstein:nth-child(13) .chronologie__img {
+    background-image: url('img/Messe-2.jpg');
+}
+
+.chronologie__meilenstein:nth-child(15) .chronologie__img {
+    background-image: url('img/Bild_27-small.jpg');
+}
+
+.chronologie__meilenstein:nth-child(17) .chronologie__img {
+    background-image: url('img/Bild_07-small.jpg');
+}
+
+.chronologie__meilenstein:nth-child(19) .chronologie__img {
+    background-image: url('img/Bild_04-small.jpg');
+}
+
+.chronologie__meilenstein:nth-child(21) .chronologie__img {
+    background-image: url('img/Bild_03-small.jpg');
+}
+
+.chronologie__meilenstein h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: var(--color-dark);
+}
+
+.chronologie__meilenstein p {
+    font-size: 18px;
+    margin-top: 16px;
+    color: var(--color-light);
+}
+
+.chronologie__meilenstein::before {
+    content: attr(date-is);
+    position: absolute;
+    left: 2em;
+    top: 0px;
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-light);
+}
+
+.chronologie__meilenstein::after {
+    width: 8px;
+    height: 8px;
+    display: block;
+    top: 3px;
+    position: absolute;
+    left: -5px;
+    border-radius: 10px;
+    content: '';
+    background: var(--color-white);
+    border: 2px solid var(--color-dark);
+}
+
+.chronologie__meilenstein:first-child {
+    padding-top: 66px;
+}
+
+.chronologie__meilenstein:first-child::before {
+    top: 46px;
+}
+
+.chronologie__meilenstein:first-child::after {
+    top: 49px;
+}
+
+.chronologie__meilenstein:last-child {
+    border: 2px solid var(--color-bg-light);
+}
+
+.chronologie__meilenstein:last-child::after {
+    background: var(--color-dark);
+}
+
+.chronologie__meilenstein-wrapper::after {
+    content: url('img/swoosh.svg');
+    position: absolute;
+    width: 50px;
+    height: 41px;
+    bottom: 176px;
+    left: -24px;
+}
+
+.chronologie__meilenstein-wrapper::before {
+    content: url('img/pencil-meilensteine.svg');
+    position: absolute;
+    width: 50px;
+    height: 41px;
+    top: -26px;
+    left: -24px;
+    z-index: 1;
+}
+
+/*----------------------------------------
+  Stimmen
+----------------------------------------*/
+
+.stimmen {
+    padding: 196px 0px;
+    margin: auto;
+    max-width: 960px;
+}
+
+#JiSlider-stimmen {
+    max-width: 100%;
+    height: 100%;
+    margin-top: 110px;
+}
+
+#JiSlider-stimmen .jislider__controller {
+    display: flex;
+    justify-content: space-between;
+    width: 44px !important;
+    padding: 0px;
+    bottom: 0px;
+}
+
+#JiSlider-stimmen .jislider__button {
+    width: 8px;
+    height: 8px;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid var(--color-light) !important;
+}
+
+#JiSlider-stimmen .jislider__on {
+    background: var(--color-dark) !important;
+}
+
+#JiSlider-stimmen .jislider__left-arrow,
+.jislider__right-arrow {
+    display: none;
+}
+
+.stimmen__slide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stimmen__slide p {
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--color-dark);
+    width: calc(50% - 24px);
+}
+
+.primary {
+    color: var(--color-primary);
+}
+
+.stimmen__quotation-wrapper {
+    position: relative;
+}
+
+.stimmen__quotation {
+    position: absolute;
+}
+
+.stimmen__quotation--top {
+    left: -54px;
+    top: -56px;
+}
+
+.stimmen__quotation--bottom {
+    right: -24px;
+    bottom: 0px;
+}
+
+.stimmen__quotation-wrapper--mobile {
+    display: none;
+}
+
+/*----------------------------------------
+  Impressum
+----------------------------------------*/
+
+.impressum {
+    margin-top: 169px;
+    margin-bottom: 96px;
+}
+
+.impressum h3 {
+    margin-bottom: 32px;
+    font-weight: 600;
+}
+
+.impressum p {
+    color: var(--color-light);
+}
+
+.impressum .word-break {
+    word-break: break-all;
+}
+
+/*----------------------------------------
+  Media Querys
+----------------------------------------*/
+
+/*  Medium desktop devices (1040px and under) */
+@media (max-width: 1040px) {
+
+    .stimmen__quotation--top {
+        left: 12px;
+    }
+
+    .stimmen__quotation--bottom {
+        right: 12px;
+    }
+
+}
+
+/* Small desktop devices (990px and under) */
+@media (max-width: 990px) {
+
+    .container {
+        padding: 0px 39px;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: var(--color-white) !important;
+        border: none !important;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: url('img/icon-burger.svg') !important;
+    }
+
+    .navbar-collapse {
+        margin-top: 16px;
+        background-color: var(--color-white);
+        padding: 16px 0px;
+        border-radius: 2px;
+    }
+
+    .nav-item {
+        padding: 8px 8px;
+    }
+
+    .nav-link {
+        color: var(--color-dark) !important;
+    }
+
+    .dropdown-toggle path {
+        fill: var(--color-dark);
+        opacity: 0.8;
+    }
+
+    .dropdown-menu {
+        border: none;
+        color: var(--color-light);
+    }
+
+    .stimmen__quotation-wrapper {
+        padding: 0px 39px;
+    }
+
+    .chronologie__meilenstein {
+        flex-direction: column;
+        padding-left: 212px;
+    }
+
+    .chronologie__meilenstein:first-child {
+        padding-top: 48px;
+    }
+
+    .chronologie__img {
+        margin-top: 24px;
+        max-width: 100%;
+        width: 416px;
+        height: 257px;
+    }
+
+    .chronologie__meilenstein-wrapper::after {
+        bottom: 324px;
+    }
+
+    .navbar--dark .navbar-toggler {
+        color: var(--color-dark) !important;
+        border: none !important;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url('img/icon-burger-dark.svg') !important;
+    }
+}
+
+/* XS-Small desktop devices (836px and under) */
+@media (max-width: 836px) {
+
+    .header__img {
+        width: 42%;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and under) */
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 768px;
+        padding: 0px 39px !important;
+        margin: 0px;
+    }
+
+    .navbar .container {
+        padding: 0px 0px !important;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .header_left {
+        padding-left: 39px;
+        width: calc(50% + 16px + 39px);
+    }
+
+    .header_right {
+        width: 334px;
+    }
+
+    .leistungen--text_img {
+        padding-left: 39px;
+        justify-content: space-between;
+    }
+
+    .leistungen--img_text {
+        padding-right: 39px;
+        justify-content: space-between;
+    }
+
+    .leistungen__text {
+        width: calc(50% - 39px);
+        margin-right: 39px;
+    }
+
+    .leistungen__img {
+        height: 473px;
+        width: calc(50% + 39px);
+    }
+
+    .leistungen--img_text .leistungen__text {
+        margin-left: 39px;
+    }
+
+    .pflegetipps__table {
+        max-width: 690px;
+    }
+
+    .maßschuh__content {
+        max-width: 690px;
+        flex-direction: column;
+    }
+
+    .maßschuh__left,
+    .maßschuh__right {
+        width: 100%;
+    }
+
+    .maßschuh__right {
+        margin-top: 48px;
+    }
+
+    .footer--top {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 24px;
+    }
+
+    .footer-contact {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 8px 24px;
+    }
+
+    .footer-contact__link {
+        margin: 0px;
+    }
+
+    .stimmen__quotation-wrapper {
+        display: none;
+    }
+
+    .stimmen__quotation-wrapper--mobile {
+        display: block;
+        margin-top: 110px;
+    }
+
+    #JiSlider-stimmen--mobile {
+        max-width: 690px;
+        margin: 0px 39px;
+    }
+
+    .stimmen__slide p {
+        width: 100%;
+    }
+
+    #JiSlider-stimmen--mobile .jislider__controller {
+        width: 92px !important;
+    }
+
+    #JiSlider-stimmen--mobile .jislider__button {
+        border: 1px solid var(--color-dark) !important;
+    }
+
+    #JiSlider-stimmen--mobile .jislider__on {
+        border: none;
+        background-color: var(--color-dark) !important;
+    }
+
+    .header--jubiläum__headline h1 {
+        font-size: 42px;
+    }
+
+}
+
+/* Small Tablet devices (710px and under) */
+@media (max-width: 710px) {
+
+    .navbar-brand .navbar__logo {
+        display: none;
+    }
+
+    .navbar-brand .navbar__logo--light {
+        display: block;
+    }
+
+    .header--index {
+        height: 633px;
+    }
+
+    .header__img {
+        width: 100%;
+        height: 288px;
+        left: 0px;
+        background-image: url('img/Bild_30-mobile.jpg');
+        background-position: top;
+    }
+
+    .header__text {
+        padding-top: 336px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .header__text h1 {
+        font-size: 40px;
+    }
+
+    .line--index-header {
+        margin: 12px auto;
+    }
+
+    .standort {
+        margin: 48px auto 0px auto;
+    }
+
+    .jubiläum__einleitung {
+        max-width: 480px;
+        width: 100%;
+        margin: 72px auto 0px auto;
+    }
+
+    .jubiläum__einleitung-logo {
+        left: -29px;
+    }
+
+}
+
+/* XS-Tablet devices (740px and under) */
+@media (max-width: 640px) {
+
+    .background-line--light {
+        background-image: none;
+    }
+
+    .header--jubiläum__headline {
+        left: calc(50% - 240px);
+        width: 480px;
+    }
+}
+
+
+/* Phone devices (576px and under) */
+@media (max-width: 576px) {
+
+    .navbar {
+        padding: 16px 24px;
+    }
+
+    .container {
+        max-width: 528px;
+        padding: 0px 24px !important;
+    }
+
+    .pencil-headline {
+        margin-bottom: 48px;
+    }
+
+    .pencil-headline__wrapper {
+        margin: 0px;
+    }
+
+    .leistungen--text_img {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .leistungen--img_text {
+        flex-direction: column-reverse;
+        padding: 0px;
+    }
+
+    .background-line {
+        background-image: none;
+    }
+
+    .leistungen__text {
+        width: 100%;
+        padding: 0px 24px;
+        margin: 0px !important;
+    }
+
+    .leistungen__img {
+        width: 100%;
+        height: 405px;
+        margin-top: 24px;
+    }
+
+    .pflegetipps__table {
+        max-width: 528px;
+        grid-template-columns: 1fr;
+    }
+
+    .pencil-headline--light .pencil-headline__wrapper {
+        margin: auto;
+    }
+
+    .footer--top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer--bottom {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-contact__social {
+        margin-right: 0px;
+    }
+
+    .header--jubiläum__headline {
+        left: 0px;
+        max-width: 480px;
+        width: 100%;
+    }
+
+    .jubiläum__einleitung {
+        max-width: calc(100% - 48px);
+        margin: 64px auto 0px auto;
+    }
+
+    .jubiläum__einleitung-logo {
+        left: calc(50% - 28px);
+    }
+
+    .chronologie__meilenstein {
+        padding-left: 28px;
+        padding-top: 26px;
+    }
+
+    .chronologie__meilenstein:first-child {
+        padding-top: 74px;
+    }
+
+    .chronologie__meilenstein-wrapper::after {
+        bottom: 350px;
+    }
+
+    #JiSlider-stimmen--mobile {
+        max-width: 480px;
+        margin: 0px;
+    }
+
+    .stimmen__quotation-wrapper {
+        padding: 0px 24px;
+    }
+}
+
+/* Small Phone devices (400px and under) */
+@media (max-width: 400px) {
+
+    .leistungen__img {
+        height: 305px;
+    }
+
+    .chronologie__meilenstein-wrapper::after {
+        bottom: 376px;
+    }
+
+}

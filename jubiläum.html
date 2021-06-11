@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jubiläum</title>
+
+    <!--------------------------------------------
+            Bootstrap CSS - Quelle: https://bit.ly/3uLcnCt
+        ----------------------------------------->
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+
+    <!--------------------------------------------
+            JiSlider CSS - Quelle: https://bit.ly/3g1GVdY
+        ----------------------------------------->
+    <link rel="stylesheet" href="assets/JiSlider.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo-light.svg" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarLeistungen" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Leistungen
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.6" d="M8.825 0.142853L5 3.67476L1.175 0.142853L0 1.23019L5 5.85714L10 1.23019L8.825 0.142853Z" fill="white" fill-opacity="0.8"/>
+                            </svg>   
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarLeistungen">
+                            <a class="dropdown-item" href="index.html">Leistungen</a>
+                            <a class="dropdown-item" href="index.html#pflegetipps">Pflegetipps</a>
+                            <a class="dropdown-item" href="index.html#maßschuh">Maßschuh</a>
+                        </div>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarJubiläum" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Jubiläum
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.6" d="M8.825 0.142853L5 3.67476L1.175 0.142853L0 1.23019L5 5.85714L10 1.23019L8.825 0.142853Z" fill="white" fill-opacity="0.8"/>
+                                </svg>   
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarJubiläum">
+                                <a class="dropdown-item" href="jubiläum.html">Jubiläum</a>
+                                <a class="dropdown-item" href="#chronologie">Chronologie</a>
+                                <a class="dropdown-item" href="#stimmen">Stimmen</a>
+                            </div>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontakt">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="impressum.html">Impressum</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container--index">
+            <div class="header header--jubiläum">
+                <div class="overlay">
+                    <div id="JiSlider-header" class="jislider">
+                        <ul>
+                            <li>
+                                <img src="img/Bild_03-dark.jpg" alt="Kasse">
+                            </li>
+                            <li>
+                                <img src="img/Bild_07-dark.jpg" alt="Mitarbeiterin">
+                            </li>
+                            <li>
+                                <img src="img/Bild_06-dark.jpg" alt="Mitarbeiter">
+                            </li>
+                            <li>
+                                <img src="img/Bild_04-dark.jpg" alt="Mitarbeiterin">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header--jubiläum__headline">
+                    <h1><span class="semibold">20 Jahre</span><br>Schuhmanufaktur Formschön</h1>
+                    <hr class="line--index-header">
+                    <h3>Immer einen Schritt voraus</h3>
+                    <a href="#einleitung" class="header--jubiläum__btn">Feiern sie mit uns</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container--index">
+            <section>
+                <div class="jubiläum__einleitung" id="einleitung">
+                    <p>Im September 2001 eröffneten wir Geschwister, Maria Gracia und Paolo Zuretti, in Bad Godesberg unsere Schuhmanufaktur.</p>
+                    <p>Zuvor hatten wir beide den Meisterbrief erworben und mehrere Jahre in verschiedenen Werkstätten Berufserfahrung gesammelt. Im September 2021 feiern wir also das 20-jährige Bestehen unserer Manufaktur.</p>
+                    <p><span class="bold">Wir freuen uns auf Ihren Besuch</span> – ob online oder direkt in der Alten Bahnhofstraße 5a in Bonn-Bad Godesberg.</p>
+                    <div class="jubiläum__einleitung-logo">
+                        <img src="img/logo-dark.svg" alt="Logo">
+                    </div>
+                </div>
+            </section>
+            <section class="bg-light">
+                <div class="chronologie" id="chronologie">
+                    <div class="section-headline">
+                        <h2>20 Jahre</h2>
+                        <hr class="line--headline-leistungen">
+                        <h4>Schuhmanufaktur Formschön</h4>
+                    </div>
+                    <div class="chronologie__meilenstein-wrapper">
+                        <div class="chronologie__meilenstein" date-is='September 2001'>
+                            <div class="chronologie__text">
+                                <h3>Ein Traum</h3>
+                                <p>Gemeinsam eröffnen wir Geschwister, Maria Gracia und Paolo Zuretti, in Bad Godesberg unsere Schuhmanufaktur. Wir haben beide den Meisterbrief erworben und bereits mehrere Jahre Berufserfahrung in verschiedenen Werkstätten gesammelt. </p>
+                            </div>
+                            <div class="chronologie__img">
+                            </div>
+                        </div>
+                        <div class="chronologie__seperator">
+                            <hr>
+                        </div>
+                        <div class="chronologie__meilenstein" date-is='September 2004'>
+                            <div class="chronologie__text">
+                                <h3>Das Team wächst</h3>
+                                <p>Lukas Bischoff beginnt seine Ausbildung bei uns. Heute ist er im Team der Spezialist für die Schäfte-Herstellung.</p>
+                            </div>
+                            <div class="chronologie__img">
+                            </div>
+                        </div>
+                        <div class="chronologie__seperator">
+                            <hr>
+                        </div>
+                        <div class="chronologie__meilenstein" date-is='August 2007'>
+                            <div class="chronologie__text">
+                                <h3>Der Durchbruch</h3>
+                                <p>Das WDR-Regionalfernsehen besucht die Manufaktur und porträtiert unsere Arbeit. Das ist der Durchbruch: Viele potenzielle Kunden und Kundinnen werden auf uns aufmerksam – nicht nur im Rheinland.</p>
+                            </div>
+                            <div class="chronologie__img">
+                            </div>
+                        </div>
+                        <div class="chronologie__seperator">
+                            <hr>
+                        </div>
+                        <div class="chronologie__meilenstein" date-is='Mai 2010'>
+                            <div class="chronologie__text">
+                                <h3>Showroom</h3>
+                                <p>Neben Werkstatt und Laden eröffnen wir einen kleinen Showroom. Hier ist eine individuelle Atmosphäre beim Maßnehmen und bei der Anprobe gewährleistet.</p>
+                            </div>
+                            <div class="chronologie__img">
+                            </div>
+                        </div>
+                        <div class="chronologie__seperator">
+                            <hr>
+                        </div>
+                        <div class="chronologie__meilenstein" date-is='Oktober 2014'>
+                            <div class="chronologie__text">
+                                <h3>Messe Teil 1</h3>
+                                <p>Die Schuhmanufaktur Formschön präsentiert ihre Modelle auf der Leistungsschau des rheinischen Handwerks in Düsseldorf.</p>
+                            </div>
+                            <div class="chronologie__img">
+                            </div>
+                        </div>
+                        <div class="chronologie__seperator">
+                            <hr>
+                        </div>
+                        <div class="chronologie__meilenstein" date-is='Dezember 2015'>
+                            <div class="chronologie__text">
+                                <h3>Die Zukunft</h3>
+                                <p>Wir beteiligen uns an der Neuordnung des Berufs „Maßschuhmacher/-in“, damit unser beruflicher Nachwuchs auf der Höhe der Zeit ist.</p>
+                            </div>
+                            <div class="chronologie__img">
+                            </div>
+                        </div>
+                        <div class="chronologie__seperator">
+                            <hr>
+                        </div>
+                        <div class="chronologie__meilenstein" date-is='März 2016'>
+                            <div class="chronologie__text">
+                                <h3>Messe Teil 2</h3>
+                                <p>Wir sind Gast auf der europäischen Leder- und Mode-Messe in Brüssel.</p>
+                            </div>
+                            <div class="chronologie__img">
+                            </div>
+                        </div>
+                        <div class="chronologie__seperator">
+                            <hr>
+                        </div>
+                        <div class="chronologie__meilenstein" date-is='Januar 2017'>
+                            <div class="chronologie__text">
+                                <h3>Event Veranstalter</h3>
+                                <p>Das alljährliche Treffen der Maßschuh- macher aus dem deutschsprachigen Raum findet diesmal bei uns, in der Schuhmanufaktur Formschön, statt.</p>
+                            </div>
+                            <div class="chronologie__img">
+                            </div>
+                        </div>
+                        <div class="chronologie__seperator">
+                            <hr>
+                        </div>
+                        <div class="chronologie__meilenstein" date-is='Dezember 2017'>
+                            <div class="chronologie__text">
+                                <h3>Tage der Manufaktur</h3>
+                                <p>Wir zeigen bei den „Tagen der Manu- fakturen“ in Berlin die Fertigung von Maßschuhen.</p>
+                            </div>
+                            <div class="chronologie__img">
+                            </div>
+                        </div>
+                        <div class="chronologie__seperator">
+                            <hr>
+                        </div>
+                        <div class="chronologie__meilenstein" date-is='September 2019'>
+                            <div class="chronologie__text">
+                                <h3>Wir wachsen</h3>
+                                <p>Leonie Meißner beginnt bei uns die neue Ausbildung zur Maßschuhmacherin.</p>
+                            </div>
+                            <div class="chronologie__img">
+                            </div>
+                        </div>
+                        <div class="chronologie__seperator">
+                            <hr>
+                        </div>
+                        <div class="chronologie__meilenstein" date-is='September 2020'>
+                            <div class="chronologie__text">
+                                <h3>Jubiläum</h3>
+                                <p>Wir feiern unser 20-jähriges Bestehen.</p>
+                            </div>
+                            <div class="chronologie__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="stimmen" id="stimmen">
+                    <div class="section-headline">
+                        <h2>Das sagen unsere Kund:innen</h2>
+                        <hr class="line--headline-leistungen">
+                        <h4>Schuhmanufaktur Formschön</h4>
+                    </div>
+                    <div class="stimmen__quotation-wrapper">
+                        <div id="JiSlider-stimmen" class="jislider">
+                            <ul>
+                                <li class="stimmen__slide">
+                                    <p>“Ich weiß nicht, wie viel Zeit ich immer damit vertan habe, Schuhe zu finden, die mir sowohl gefielen als auch wirklich gut passten. Meistens entschied ich mich dann für etwas optisch Ansprechendes und nahm dafür <span class="bold">Schmerzen an den Füßen</span> in Kauf. <span class="bold">Damit ist nun Schluss.</span>”</p>
+                                    <p>“Ich bin 16 Stunden am Tag im wahrsten Sinn des Wortes auf den Füßen. Und da merkt man schnell, welches Schuhwerk man trägt. Seit ich einmal gemerkt habe, welchen Unterschied es macht, ob die Schuhe wie angegossen passen oder nicht, ist für mich klar: <span class="bold">Die Maßschuhe von Formschön sind ihren Preis wert.</span>”</p>
+                                </li>
+                                <li class="stimmen__slide">
+                                    <p>"Ich komme gerne in die Maßschuhmacherei Formschön, <span class="bold">weil mir die Atmosphäre gefällt und weil ich mich immer gut beraten fühle.</span>"</p>
+                                    <p>"Wenn ich all diese Plastikschuhe in den üblichen Auslagen sehe, denke ich: Welche Materialvergeudung! <span class="bold">Da sind handgefertigte Schuhe doch viel nachhaltiger.</span>"</p>
+                                </li>
+                                <li class="stimmen__slide">
+                                    <p>"Einmal habe ich einen sehr passenden Spruch gehört: <span class="bold">„Wer billigt kauft, zahlt doppelt!</span>“</p>
+                                    <p>"Mir kommt es aufs <span class="bold">Preis-Leistungs-Verhältnis an. Und das stimmt</span> bei „Formschön“.</p>
+                                </li>
+                                <li class="stimmen__slide">
+                                    <p>"Ich hasse das Einkaufen. Und deshalb bin ich froh, dass es die Schuhmanufaktur Formschön gibt. <span class="bold">Dort weiß ich, was ich für mein Geld bekomme</span>. Außerdem hält ein Paar Maßschuhe einfach lange – und erspart es mir, laufend wieder auswählen und anprobieren zu müssen."</p>
+                                    <p>"Maßschuhe kann ich mir nicht leisten. Zum Glück habe ich ein unproblematisches Paar Füße, für die ich leicht hochwertige Konfektionsschuhe finde. Sie müssen zeitlos gut aussehen und aus bestem Leder gefertigt sein. Dann bringe ich sie im Laufe der Jahre immer mal wieder zur Schuhmanufaktur Formschön, <span class="bold">wenn Absätze repariert oder neue Sohlen aufgebracht werden müssen. Das lohnt sich!</span>"</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="stimmen__quotation stimmen__quotation--top">
+                            <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.08511 30C2.8836 29.1944 1.88235 28.0665 1.08135 26.6163C0.360451 25.1662 0 23.2326 0 20.8157C0 17.2709 0.801001 13.6858 2.403 10.0604C4.00501 6.35448 6.12766 3.01108 8.77096 0.0302111C9.41176 -0.0503518 10.2128 0.0302111 11.174 0.2719C12.1352 0.513593 12.8961 0.83585 13.4568 1.23867C12.1752 3.01108 11.0538 5.02518 10.0926 7.28097C9.21151 9.53676 8.77096 11.4703 8.77096 13.0816C8.77096 14.6123 9.13141 15.9416 9.85232 17.0695C10.6533 18.1974 12.0551 18.8419 14.0576 19.003C14.1377 20.0504 14.0976 21.3394 13.9374 22.8701C13.7772 24.4008 13.4969 25.6093 13.0964 26.4955C9.73217 27.0594 6.72841 28.2276 4.08511 30ZM21.8673 29.6375C20.5857 28.8318 19.5845 27.7039 18.8636 26.2538C18.1427 24.8036 17.7822 22.8701 17.7822 20.4532C17.7822 16.9084 18.5832 13.4038 20.1852 9.93958C21.7872 6.47532 23.8698 3.25277 26.433 0.2719C27.1539 0.191337 27.9549 0.271902 28.836 0.513596C29.7972 0.755289 30.5582 1.07755 31.1189 1.48036C29.9174 3.25277 28.836 5.22658 27.8748 7.40181C26.9136 9.57704 26.433 11.4703 26.433 13.0816C26.433 14.6123 26.8335 15.9416 27.6345 17.0695C28.5156 18.1974 29.9574 18.8419 31.9599 19.003C32.0401 20.0504 32 21.2991 31.8398 22.7492C31.6796 24.1188 31.3992 25.2467 30.9987 26.1329C29.3166 26.4552 27.6746 26.8983 26.0726 27.4622C24.4706 28.0262 23.0688 28.7513 21.8673 29.6375Z" fill="#DCA35B"/>
+                            </svg>                                
+                        </div>
+                        <div class="stimmen__quotation stimmen__quotation--bottom">
+                            <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27.8793 0C29.1415 0.771455 30.1439 1.89007 30.8863 3.35583C31.6288 4.74445 32 6.71167 32 9.25747C32 12.8062 31.2204 16.432 29.6613 20.135C28.1021 23.7608 25.9861 27.0395 23.3132 29.9711C22.5708 30.0482 21.7169 29.9711 20.7517 29.7396C19.7865 29.5082 18.9698 29.161 18.3016 28.6982C19.7123 26.8467 20.826 24.8795 21.6427 22.7965C22.5336 20.6365 22.9791 18.7464 22.9791 17.1263C22.9791 15.6606 22.5708 14.4262 21.7541 13.4233C21.0116 12.3433 19.6752 11.7261 17.7448 11.5718C17.6705 10.3375 17.7077 8.94889 17.8561 7.40598C18.0789 5.78592 18.413 4.47445 18.8585 3.47156C22.2738 3.00868 25.2807 1.85149 27.8793 0ZM10.3944 0.347158C11.7309 1.04147 12.7332 2.12151 13.4014 3.58727C14.0696 4.97589 14.4037 6.98168 14.4037 9.60463C14.4037 13.1533 13.6241 16.6635 12.065 20.135C10.58 23.6066 8.57541 26.7695 6.05104 29.6239C5.16009 29.7011 4.23202 29.6239 3.26682 29.3925C2.37587 29.161 1.63341 28.8139 1.03944 28.351C2.30162 26.5767 3.37819 24.6866 4.26914 22.6808C5.16009 20.5979 5.60557 18.7464 5.60557 17.1263C5.60557 15.6606 5.16009 14.4262 4.26914 13.4233C3.45244 12.3433 2.04176 11.7261 0.0371229 11.5718C-0.0371229 10.3375 9.84465e-08 9.02603 0.148492 7.63741C0.296984 6.17165 0.593967 4.86017 1.03944 3.70299C2.82135 3.47155 4.49188 3.08582 6.05104 2.54581C7.68445 1.92864 9.13225 1.19576 10.3944 0.347158Z" fill="#DCA35B"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                    <div class="stimmen__quotation-wrapper stimmen__quotation-wrapper--mobile">
+                        <div id="JiSlider-stimmen--mobile" class="jislider">
+                            <ul>
+                                <li class="stimmen__slide">
+                                    <p>“Ich weiß nicht, wie viel Zeit ich immer damit vertan habe, Schuhe zu finden, die mir sowohl gefielen als auch wirklich gut passten. Meistens entschied ich mich dann für etwas optisch Ansprechendes und nahm dafür <span class="bold">Schmerzen an den Füßen</span> in Kauf. <span class="bold">Damit ist nun Schluss.</span>”</p>
+                                </li>
+                                <li class="stimmen__slide">
+                                    <p>“Ich bin 16 Stunden am Tag im wahrsten Sinn des Wortes auf den Füßen. Und da merkt man schnell, welches Schuhwerk man trägt. Seit ich einmal gemerkt habe, welchen Unterschied es macht, ob die Schuhe wie angegossen passen oder nicht, ist für mich klar: <span class="bold">Die Maßschuhe von Formschön sind ihren Preis wert.</span>”</p>
+                                </li>
+                                <li class="stimmen__slide">
+                                    <p>"Ich komme gerne in die Maßschuhmacherei Formschön, <span class="bold">weil mir die Atmosphäre gefällt und weil ich mich immer gut beraten fühle.</span>"</p>
+                                </li>
+                                <li class="stimmen__slide">
+                                    <p>"Wenn ich all diese Plastikschuhe in den üblichen Auslagen sehe, denke ich: Welche Materialvergeudung! <span class="bold">Da sind handgefertigte Schuhe doch viel nachhaltiger.</span>"</p>
+                                </li>
+                                <li class="stimmen__slide">
+                                    <p>"Einmal habe ich einen sehr passenden Spruch gehört: <span class="bold">„Wer billigt kauft, zahlt doppelt!</span>“</p>
+                                </li>
+                                <li class="stimmen__slide">
+                                    <p>"Mir kommt es aufs <span class="bold">Preis-Leistungs-Verhältnis an. Und das stimmt</span> bei „Formschön“.</p>
+                                </li>
+                                <li class="stimmen__slide">
+                                    <p>"Ich hasse das Einkaufen. Und deshalb bin ich froh, dass es die Schuhmanufaktur Formschön gibt. <span class="bold">Dort weiß ich, was ich für mein Geld bekomme</span>. Außerdem hält ein Paar Maßschuhe einfach lange – und erspart es mir, laufend wieder auswählen und anprobieren zu müssen."</p>
+                                </li>
+                                <li class="stimmen__slide">
+                                    <p>"Maßschuhe kann ich mir nicht leisten. Zum Glück habe ich ein unproblematisches Paar Füße, für die ich leicht hochwertige Konfektionsschuhe finde. Sie müssen zeitlos gut aussehen und aus bestem Leder gefertigt sein. Dann bringe ich sie im Laufe der Jahre immer mal wieder zur Schuhmanufaktur Formschön, <span class="bold">wenn Absätze repariert oder neue Sohlen aufgebracht werden müssen. Das lohnt sich!</span>"</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="stimmen__quotation stimmen__quotation--top">
+                            <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.08511 30C2.8836 29.1944 1.88235 28.0665 1.08135 26.6163C0.360451 25.1662 0 23.2326 0 20.8157C0 17.2709 0.801001 13.6858 2.403 10.0604C4.00501 6.35448 6.12766 3.01108 8.77096 0.0302111C9.41176 -0.0503518 10.2128 0.0302111 11.174 0.2719C12.1352 0.513593 12.8961 0.83585 13.4568 1.23867C12.1752 3.01108 11.0538 5.02518 10.0926 7.28097C9.21151 9.53676 8.77096 11.4703 8.77096 13.0816C8.77096 14.6123 9.13141 15.9416 9.85232 17.0695C10.6533 18.1974 12.0551 18.8419 14.0576 19.003C14.1377 20.0504 14.0976 21.3394 13.9374 22.8701C13.7772 24.4008 13.4969 25.6093 13.0964 26.4955C9.73217 27.0594 6.72841 28.2276 4.08511 30ZM21.8673 29.6375C20.5857 28.8318 19.5845 27.7039 18.8636 26.2538C18.1427 24.8036 17.7822 22.8701 17.7822 20.4532C17.7822 16.9084 18.5832 13.4038 20.1852 9.93958C21.7872 6.47532 23.8698 3.25277 26.433 0.2719C27.1539 0.191337 27.9549 0.271902 28.836 0.513596C29.7972 0.755289 30.5582 1.07755 31.1189 1.48036C29.9174 3.25277 28.836 5.22658 27.8748 7.40181C26.9136 9.57704 26.433 11.4703 26.433 13.0816C26.433 14.6123 26.8335 15.9416 27.6345 17.0695C28.5156 18.1974 29.9574 18.8419 31.9599 19.003C32.0401 20.0504 32 21.2991 31.8398 22.7492C31.6796 24.1188 31.3992 25.2467 30.9987 26.1329C29.3166 26.4552 27.6746 26.8983 26.0726 27.4622C24.4706 28.0262 23.0688 28.7513 21.8673 29.6375Z" fill="#DCA35B"/>
+                            </svg>                                
+                        </div>
+                        <div class="stimmen__quotation stimmen__quotation--bottom">
+                            <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27.8793 0C29.1415 0.771455 30.1439 1.89007 30.8863 3.35583C31.6288 4.74445 32 6.71167 32 9.25747C32 12.8062 31.2204 16.432 29.6613 20.135C28.1021 23.7608 25.9861 27.0395 23.3132 29.9711C22.5708 30.0482 21.7169 29.9711 20.7517 29.7396C19.7865 29.5082 18.9698 29.161 18.3016 28.6982C19.7123 26.8467 20.826 24.8795 21.6427 22.7965C22.5336 20.6365 22.9791 18.7464 22.9791 17.1263C22.9791 15.6606 22.5708 14.4262 21.7541 13.4233C21.0116 12.3433 19.6752 11.7261 17.7448 11.5718C17.6705 10.3375 17.7077 8.94889 17.8561 7.40598C18.0789 5.78592 18.413 4.47445 18.8585 3.47156C22.2738 3.00868 25.2807 1.85149 27.8793 0ZM10.3944 0.347158C11.7309 1.04147 12.7332 2.12151 13.4014 3.58727C14.0696 4.97589 14.4037 6.98168 14.4037 9.60463C14.4037 13.1533 13.6241 16.6635 12.065 20.135C10.58 23.6066 8.57541 26.7695 6.05104 29.6239C5.16009 29.7011 4.23202 29.6239 3.26682 29.3925C2.37587 29.161 1.63341 28.8139 1.03944 28.351C2.30162 26.5767 3.37819 24.6866 4.26914 22.6808C5.16009 20.5979 5.60557 18.7464 5.60557 17.1263C5.60557 15.6606 5.16009 14.4262 4.26914 13.4233C3.45244 12.3433 2.04176 11.7261 0.0371229 11.5718C-0.0371229 10.3375 9.84465e-08 9.02603 0.148492 7.63741C0.296984 6.17165 0.593967 4.86017 1.03944 3.70299C2.82135 3.47155 4.49188 3.08582 6.05104 2.54581C7.68445 1.92864 9.13225 1.19576 10.3944 0.347158Z" fill="#DCA35B"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container--index">
+            <div class="container">
+                <div class="footer--top" id="kontakt">
+                    <div class="footer__text">
+                        <h3>Öffnungszeiten</h3>
+                        <p>Montag–Freitag 9–17 Uhr</p>
+                        <p>Samstag	10–15 Uhr und </p>
+                        <p>nach Vereinbarung</p>
+                    </div>
+                    <div class="footer__text">
+                        <h3>Kontakt</h3>
+                        <p>Schuhmanufaktur Formschön GmbH</p>
+                        <p>Alte Bahnhofstraße 5a </p>
+                        <p>53173 Bonn-Bad Godesberg </p>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="footer-contact__link">
+                            <img class="footer-contact__icon" src="img/icon-phone.svg" alt="Mail Icon">
+                            <a href="tel:0228-123450">Tel: 0228-123450</a>
+                        </div>
+                        <div class="footer-contact__link">
+                            <img class="footer-contact__icon" src="img/icon-fax.svg" alt="Globe Icon">
+                            <a href="tel:0228-123450">Fax: 0228-123459</a>
+                        </div>
+                        <div class="footer-contact__link">
+                            <img class="footer-contact__icon" src="img/icon-mail.svg" alt="Mail Icon">
+                            <a href="mailto:info@schuhmanufaktur-formschön.de">info@schuhmanufaktur-formschön.de</a>
+                        </div>
+                        <div class="footer-contact__link">
+                            <img class="footer-contact__icon" src="img/icon-globe.svg" alt="Globe Icon">
+                            <a href="https://www.schuhmanufaktur-formschön.de" target="_blank">www.schuhmanufaktur-formschön.de</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer--bottom">
+                    <div class="footer-contact__social">
+                        <a href="https://www.youtube.com/" target="_blank"><img src="img/youtube.svg" alt="Youtube"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.svg" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.svg" alt="Facebook"></a>
+                        <a href="https://www.snapchat.com/" target="_blank"><img src="img/snapchat.svg" alt="snapchat"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--------------------------------------------
+            JQuery JS - Quelle: https://bit.ly/3fELRq6
+        ----------------------------------------->
+    <script type = "text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+    <!--------------------------------------------
+            Bootstrap JS - Quelle: https://bit.ly/3uLcnCt
+        ----------------------------------------->
+    <script type = "text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+    <!--------------------------------------------
+            JiSlider JS - Quelle: https://bit.ly/3g1GVdY
+        ----------------------------------------->
+    <script src="js/JiSlider.js"></script>
+    <script>
+
+        /*----------------------------------------
+            Header Slider
+        ----------------------------------------*/
+        $(window).on('load', function(){
+            $('#JiSlider-header').JiSlider({
+                // autoplay
+                auto: true,
+
+                // initial image
+                start: 1,
+
+                // animation speed
+                time: 700,
+
+                // transition delay
+                stay: 10000,
+
+                // display slider controls
+                controller: true,
+
+                // easing method
+                easing: 'ease',
+
+                // text color
+                color: '#fff',
+
+                // reverse direction
+                reverse: false,
+            })
+        });
+
+        /*----------------------------------------
+            Stimmen Slider
+        ----------------------------------------*/
+        $(window).on('load', function(){
+            $('#JiSlider-stimmen').JiSlider({
+                // autoplay
+                auto: true,
+
+                // initial image
+                start: 1,
+
+                // animation speed
+                time: 700,
+
+                // transition delay
+                stay: 10000,
+
+                // display slider controls
+                controller: true,
+
+                // easing method
+                easing: 'ease',
+
+                // text color
+                color: '#fff',
+
+                // reverse direction
+                reverse: false,
+            })
+        });
+
+        /*----------------------------------------
+            Stimmen Slider Mobile
+        ----------------------------------------*/
+        $(window).on('load', function(){
+            $('#JiSlider-stimmen--mobile').JiSlider({
+                // autoplay
+                auto: true,
+
+                // initial image
+                start: 1,
+
+                // animation speed
+                time: 700,
+
+                // transition delay
+                stay: 10000,
+
+                // display slider controls
+                controller: true,
+
+                // easing method
+                easing: 'ease',
+
+                // text color
+                color: '#fff',
+
+                // reverse direction
+                reverse: false,
+            })
+        });
+
+    </script>
+</body>
+</html>
